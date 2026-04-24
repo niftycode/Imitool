@@ -1,0 +1,38 @@
+#############################
+#### Configuration Files ####
+#############################
+.DS_Store
+.vscode
+.idea
+.fleet
+
+#############################
+### Build Files & Folders ###
+#############################
+dist/
+build/
+wheels/
+release/
+*.egg-info/
+__pycache__/
+Imitool.spec
+create-app.sh
+
+#############################
+### venv & Code Coverage ####
+#############################
+.venv/
+.coverage
+/htmlcov
+
+#############################
+############ uv #############
+#############################
+.python-version
+uv.lock
+
+#############################
+########### Misc ############
+#############################
+.mypy_cache
+.pytest_cache

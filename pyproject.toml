@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "imitool"
+version = "0.1.4"
+description = "Image Viewer"
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "MIT" }
+authors = [
+    { name = "Bodo Schönfeld", email = "bodo.schoenfeld@niftycode.de" }
+]
+urls = { "Homepage" = "https://github.com/niftycode/imitool" }
+
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 2 - Pre-Alpha",
+    "Operating System :: MacOS :: MacOS X",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: Implementation :: CPython"
+]
+
+dependencies = []
+
+[project.scripts]
+imitool = "src.main:main"
+
+[tool.setuptools]
+zip-safe = false
+# packages = { find = { exclude = ["tests"] } }
+
+[tool.setuptools.packages.find]
+where = ["src"]

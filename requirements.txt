@@ -1,0 +1,12 @@
+setuptools
+wheel
+build
+pytest
+pytest-cov
+setuptools
+flake8
+black
+mypy
+Pillow
+pillow-heif
+pyinstaller
