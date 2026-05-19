@@ -1,7 +1,7 @@
 # imitool
 
 ![Static Badge](https://img.shields.io/badge/python-%3E%3D3.13-blue)
-![GitHub License](https://img.shields.io/github/license/niftycode/Imitool))
+![GitHub License](https://img.shields.io/github/license/niftycode/Imitool)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/niftycode/Imitool)
 ![GitHub last commit](https://img.shields.io/github/last-commit/niftycode/Imitool)
