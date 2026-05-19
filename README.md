@@ -28,3 +28,7 @@ The program can then be started by executing the file `main.py`.
 ```Bash
 python3 src/main.py
 ```
+
+## Download
+
+You can download the latest version of the program [here](https://github.com/niftycode/Imitool/releases) (only for macOS).

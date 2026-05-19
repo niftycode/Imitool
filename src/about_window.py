@@ -33,7 +33,7 @@ def show_custom_about():
     tk.Label(about, text="Imitool", font=("Helvetica", 16, "bold")).pack(pady=(10, 0))
 
     # Version
-    tk.Label(about, text="Version 0.1.4").pack()
+    tk.Label(about, text="Version 0.1.5").pack()
 
     # Copyright
     tk.Label(about, text="2026 MIT License").pack(pady=(0, 10))

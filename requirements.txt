@@ -9,4 +9,5 @@ black
 mypy
 Pillow
 pillow-heif
+pillow-jxl-plugin
 pyinstaller

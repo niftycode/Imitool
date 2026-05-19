@@ -2,10 +2,10 @@
 
 """
 This is a simple GUI application that displays the size of an image.
-Version: 1.0
+Version: 1.1
 Python 3.14
 Date created: March 26, 2026
-Date modified: April 4th, 2026
+Date modified: May 19th, 2026
 """
 
 import os
@@ -14,11 +14,10 @@ import tkinter as tk
 from tkinter import filedialog, ttk
 
 import pillow_heif
+import pillow_jxl
 from PIL import Image, ImageTk
 
 from src import about_window, check_exiftool, metadata
-
-# from pillow_heif import register_heif_opener
 
 
 class MainWindow:
@@ -45,7 +44,7 @@ class MainWindow:
         self.content_frame.pack(expand=True, fill=tk.BOTH, padx=10, pady=10)
 
         # Linker Bereich für das Bild
-        self.image_label = tk.Label(self.content_frame, text="Kein Bild ausgewählt")
+        self.image_label = tk.Label(self.content_frame, text="No image selected.")
         self.image_label.pack(side=tk.LEFT, expand=True, fill=tk.BOTH)
 
         # Rechter Bereich für die Informationen
@@ -132,9 +131,10 @@ class MainWindow:
     def load_image(self, file_path=None):
         if file_path is None:
             filetypes = [
-                ("Image files", "*.png *.jpg *.jpeg *.heic *.HEIC *.heif *.HEIF"),
+                ("Image files", "*.png *.jpg *.jpeg *.jxl *.heic *.HEIC *.heif *.HEIF"),
                 ("PNG", "*.png"),
                 ("JPEG", "*.jpg *.jpeg"),
+                ("JXL", "*.jxl"),
                 ("All files", "*.*"),
             ]
             file_path = filedialog.askopenfilename(
